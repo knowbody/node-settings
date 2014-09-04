@@ -1,0 +1,15 @@
+{
+  "name": "node-settings",
+  "version": "0.0.1",
+  "description": "Simple way of storing your app's settings (e.g. for development or production)",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm install && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateusz Zatorski (https://github.com/knowbody)",
+  "license": "MIT",
+	"dependencies": {
+		"express": "latest"
+	}
+}
