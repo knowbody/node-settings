@@ -10,6 +10,6 @@
   "author": "Mateusz Zatorski (https://github.com/knowbody)",
   "license": "MIT",
 	"dependencies": {
-		"express": "latest"
+		"express": "4.8.7"
 	}
 }
