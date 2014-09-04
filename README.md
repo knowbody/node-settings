@@ -15,7 +15,6 @@ For example: for development, production, test, etc.
 
 ### `./settings/base.js` sets the base skeleton of the settings file:
     
-    ```javascript
     var s = module.exports = {};
     
     s.app = {}
@@ -25,13 +24,11 @@ For example: for development, production, test, etc.
 
     s.author = {};
     s.author.username = "knowbody";
-    ```
 ---
 
 
 ### This is the example of development settings:
 
-    ```javascript
     var s = require('./base');
     
     s.app.host = process.env.APP_HOST || "localhost";
@@ -45,31 +42,26 @@ For example: for development, production, test, etc.
     s.redis.port = process.env.REDIS_PORT || 6379;
 
     module.exports = s;
-    ```
 ---
 
 
 ### Overriding settings in production:
 
-    ```javascript
     ...
     s.author.name = "Mateusz";
     s.author.username = "username";
     ...
-    ```
 ---
 
 
 ### Use of settings in the app:
 
-    ```javascript
     ...
     var settings = require('./settings');
     var port = settings.app.port;
     ...
     app.listen(port);
     console.log("Listening on port:", port);
-    ```
 ---
 
 
